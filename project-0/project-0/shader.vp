@@ -1,7 +1,7 @@
-in vec4 vVertex;
-in vec4 vColor;
+attribute vec4 vVertex;
+attribute vec4 vColor;
 
-out vec4 vVaryingColor;
+varying vec4 vVaryingColor;
 
 void main() {
   vVaryingColor = vColor;
