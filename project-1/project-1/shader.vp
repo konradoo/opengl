@@ -1,10 +1,13 @@
-varying vec4 vVertex;
-varying vec4 vColor;
+#version 120
+
+attribute vec4 vVertex;
+attribute vec4 vColor;
+
+varying vec4 vVaryingColor;
 
 uniform mat4 MVPMatrix;
 
 void main() {
-
-    gl_VaryingColor = vColor;
+    vVaryingColor = vColor;
     gl_Position = MVPMatrix * vVertex;
 }
