@@ -5,7 +5,7 @@ attribute vec4 vColor;
 
 varying vec4 vVaryingColor;
 
-uniform mat4 MVPMatrix;
+uniform mat4x4 MVPMatrix;
 
 void main() {
     vVaryingColor = vColor;
